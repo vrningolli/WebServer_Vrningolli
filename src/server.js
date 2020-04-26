@@ -20,19 +20,22 @@ app.set('views',viewsPath)
 app.get('',(req,res)=>{
 res.render('index',{
     title:"Home",
-    homeText:"This is some home text"
+    homeText:"This is some home text",
+    name:"V R Ningolli"
 })
 })
 app.get('/about',(req,res)=>{
     res.render('about',{
         title:"About",
-        aboutText:"This is some about text"
+        aboutText:"This is some about text",
+        name:"V R Ningolli"
     })  
 })  
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:"Help",
-        helpText:"This is some helpful text"
+        helpText:"This is some helpful text",
+        name:"V R Ningolli"
     })   
 })
 app.get('/weather',(req,res)=>{
@@ -67,12 +70,14 @@ app.get('/products',(req,res)=>{
 })
 app.get('/help/*',(req,res)=>{    
     res.render('helperror',{
-        title:"The Help Error"
+        title:"The Help Error",
+        name:"V R Ningolli"
      })
 })
 app.get('*',(req,res)=>{   
     res.render('404Error',{
-        title:"The 404 Error Page"
+        title:"The 404 Error Page",
+        name:"V R Ningolli"
     })
 })
 app.listen(port,()=>{
