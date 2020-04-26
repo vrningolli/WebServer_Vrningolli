@@ -5,7 +5,7 @@ const path=require("path")
 const hbs=require("hbs")
 const express=require('express');
 const app=express();
-const port=process.env.PORT
+const port=process.env.PORT||3000
 // define paths for express config
 const partialPath=path.join(__dirname,'./partials')
 const newPathName=path.join(__dirname,"../public")
