@@ -5,6 +5,7 @@ const path=require("path")
 const hbs=require("hbs")
 const express=require('express');
 const app=express();
+const port=process.env.PORT
 // define paths for express config
 const partialPath=path.join(__dirname,'./partials')
 const newPathName=path.join(__dirname,"../public")
@@ -74,6 +75,6 @@ app.get('*',(req,res)=>{
         title:"The 404 Error Page"
     })
 })
-app.listen(3001,()=>{
-    console.log("Server is up and running!!");
+app.listen(port,()=>{
+    console.log("Server is up and running!! in "+port);
 })

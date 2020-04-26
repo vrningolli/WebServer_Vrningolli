@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit',(e)=>{
     messageOne.textContent="Loading!!"
     messageTwo.textContent=""
 
-    fetch('http://localhost:3001/products?search='+location).then((response)=>{
+    fetch('products?search='+location).then((response)=>{
 
     response.json().then((data)=>{
 
