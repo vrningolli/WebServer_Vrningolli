@@ -77,6 +77,7 @@ app.get('/help/*',(req,res)=>{
 app.get('*',(req,res)=>{   
     res.render('404Error',{
         title:"The 404 Error Page",
+        errorMessage:"The page cannot be found!!",
         name:"V R Ningolli"
     })
 })

@@ -1,19 +1,20 @@
 <html>
 <head>
      <link rel="icon" href="/img/icon.jpg">
-    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/newJs.js"></script>    
 </head>
 <body>
-    {{>header}}
 
-    <h1>
-        Page: {{title}} 
-                
-    </h1><br>
-    <p>404 : Page Not Found Error</p><br>
+  <div class="main-content">
 
-    <img id="img1" src="../img/error2.png" alt="error2"><br>
+      {{>header}}
+
+     <p>{{title}} 404 : Page Not Found</p>
+
+  </div>
+    
+   <img id="img1" src="../img/MichaelScott.png" alt="MichaelScott Error"><br>
     
     {{>footer}}
 </body>
