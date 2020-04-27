@@ -6,11 +6,13 @@ body {
     padding: 0 16px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh
+    min-height: 100vh;
+    background-color: #c4b9b9de;
 }
 
 .main-content {
     flex-grow: 1;
+  
 }
 
 footer {
@@ -18,22 +20,28 @@ footer {
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
+    border-top-color: maroon ;
 }
 
 header {
     margin-top: 16px;
     margin-bottom: 48px;
+    color: #0d0e0d;
+
 }
 
 h1 {
     font-size: 64px;
     margin-bottom: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header a {
-    color: #888888;
+    color: #1b0707;
     margin-right: 16px;
     text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 .portrait {
@@ -53,6 +61,22 @@ cursor: pointer;
 border: 1px solid #888888;
 padding: 8px;
 color:white;
-background: #888888;
+background: #333131;
 
+}
+
+img{
+    padding-top: 2px;
+    width: 300px;
+    padding: 30px;
+}
+
+p{
+
+    color: #1b0707;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input{
+
+    background-color: #f3d0d0;
 }
