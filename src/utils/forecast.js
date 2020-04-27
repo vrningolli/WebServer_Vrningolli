@@ -19,7 +19,7 @@ request({url,json:true},(error,{body})=>{
     }
     else{
         callback(undefined,
-        body.current.weather_descriptions[0]+", the current temperatue is "+body.current.temperature+" but Feelslike "+body.current.feelslike
+        body.current.weather_descriptions[0]+", the current temperatue is "+body.current.temperature+" but Feelslike "+body.current.feelslike+" and the pressure is: "+body.current.pressure
         )
     }
 }); 
